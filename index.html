@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Form validation JS</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        input:invalid {
+            border: 2px dashed red;
+        }
+
+        input:valid {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <form novalidate id="form1">
+        <label for="Email">E-mail : </label>
+        <input type="text" id="Email" />
+        <label for="Country">Country : </label>
+        <select id="Country">
+            <option value="ch">Switzerland</option>
+            <option value="fr">France</option>
+            <option value="de">Germany</option>
+            <option value="nl">The Netherlands</option>
+        </select>
+        <label for="ZIP">ZIP : </label>
+        <input type="text" id="ZIP" />
+        <label for="Password">Password : </label>
+        <input type="password" id="Password" />
+        <input type="password" id="PasswordConfirmation" />
+        <input type="submit" value="Validate" />
+    </form>
+</body>
+
+</html>
+
+<script src="js/main.js" defer></script>
